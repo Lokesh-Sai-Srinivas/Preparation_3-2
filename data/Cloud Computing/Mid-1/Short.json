@@ -35,6 +35,11 @@
         "graphviz": "digraph Utility {\n  Resources -> Meter -> \"Usage-Based Bill\";\n}"
     },
     {
+        "q": "Define Virtualization.",
+        "a": "### **Virtualization**\n\n**1. Definition**\nVirtualization is the process of creating a software-based (virtual) representation of something, such as virtual applications, servers, storage, and networks. It uses software called a **Hypervisor** to abstract hardware resources.\n\n**2. Key Component**\n*   **Hypervisor (VMM):** Software that manages the distribution of physical resources to multiple virtual machines (VMs).\n\n**3. Conclusion**\nIt is the foundational technology of cloud computing, enabling efficient resource sharing and multi-tenancy.",
+        "graphviz": "digraph Virt {\n  HW [label=\"Physical Hardware\"];\n  HP [label=\"Hypervisor\", shape=doublebox];\n  HW -> HP;\n  HP -> {VM1, VM2, VM3};\n}"
+    },
+    {
         "q": "What is service oriented Architecture (SOA)?",
         "a": "### **Service Oriented Architecture (SOA)**\n\n**1. Definition**\nSOA is an architectural style in software design where components provide services to other components via a communications protocol over a network.\n\n**2. Key Principles**\n*   **Loose Coupling:** Services are independent and don't rely on the internal state of others.\n*   **Reusability:** Services can be combined in different ways to build new apps.\n\n**3. Conclusion**\nSOA is the predecessor to modern Microservices and is essential for cloud modularity.",
         "table": "| Protocol | Purpose |\n| :--- | :--- |\n| **SOAP** | XML-based Messaging |\n| **REST** | Resource-based API (Lightweight) |"
