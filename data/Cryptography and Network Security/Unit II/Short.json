@@ -1,0 +1,48 @@
+[
+    {
+        "q": "Define a group. List any two properties of a group.",
+        "a": "### **Group Definition & Properties**\n\n**1. Definition**\nA **Group** is a set $G$ equipped with a binary operation $\\cdot$ that satisfies four fundamental properties.\n\n**2. Properties (Any Two)**\n*   **Closure:** For all $a, b \\in G$, the result $a \\cdot b$ is also in $G$.\n*   **Associativity:** For all $a, b, c \\in G$, $(a \\cdot b) \\cdot c = a \\cdot (b \\cdot c)$.\n*   *(Other properties: Identity, Inverse)*\n\n**3. Conclusion**\nGroups form the mathematical basis for cryptographic systems like RSA and Elliptic Curves.",
+        "graphviz": "digraph Group {\n  rankdir=LR;\n  node [shape=box, style=filled, fillcolor=lightcyan];\n  Set [label=\"Set G\"];\n  Op [label=\"Operation •\"];\n  Result [label=\"a • b ∈ G\\n(Closure)\"];\n  Set -> Op -> Result;\n}",
+        "table": "| Property | Description |\n| :--- | :--- |\n| **Closure** | Result stays in set |\n| **Associativity** | Order doesn't matter |\n| **Identity** | Element $e$ exists |\n| **Inverse** | $a^{-1}$ exists |"
+    },
+    {
+        "q": "What is a product cipher?",
+        "a": "### **Product Cipher**\n\n**1. Definition**\nA **Product Cipher** is a complex cipher formed by combining two or more simple ciphers (usually Substitution and Permutation) in a sequence to achieve higher security.\n\n**2. Key Concept**\n*   **Shannon's Theory:** Combines **Confusion** (Substitution) and **Diffusion** (Permutation).\n*   **Structure:** Typically implemented as a loop of multiple **Rounds**.\n\n**3. Example**\n*   **DES** and **AES** are classic product ciphers.\n\n**4. Conclusion**\nIt is more secure than individual components because it cancels out their specific weaknesses.",
+        "graphviz": "digraph Product {\n  rankdir=LR;\n  node [shape=box];\n  In [label=\"Plaintext\"];\n  S [label=\"Substitution\\n(Confusion)\"];\n  P [label=\"Permutation\\n(Diffusion)\"];\n  Out [label=\"Ciphertext\"];\n  In -> S -> P -> Out;\n  label=\"Basic Round\";\n}",
+        "table": "| Component | Role |\n| :--- | :--- |\n| **Substitution** | Hides pattern (Confusion) |\n| **Permutation** | Spreads bits (Diffusion) |\n| **Result** | Strong Cipher |"
+    },
+    {
+        "q": "What is the avalanche effect in DES?",
+        "a": "### **Avalanche Effect**\n\n**1. Definition**\nThe **Avalanche Effect** is a desirable property in cryptography where a small change in the input (e.g., flipping 1 bit of plaintext or key) results in a significant change (approx. 50% of bits) in the ciphertext.\n\n**2. Significance**\n*   **Unpredictability:** Prevents attackers from identifying patterns or predicting outputs.\n*   **Security:** If 1 bit change only changed 1 output bit, code breaking would be trivial.\n\n**3. Conclusion**\nDES achieves this via its multiple rounds of S-Boxes and P-Boxes.",
+        "graphviz": "digraph Avalanche {\n  rankdir=LR;\n  In1 [label=\"Input: ...000\"];\n  In2 [label=\"Input: ...001\"];\n  Box [label=\"Encryption\", shape=box];\n  Out1 [label=\"101100...\"];\n  Out2 [label=\"010011...\"];\n  Diff [label=\"Totally Different\\n(>50% flipped)\", style=dashed];\n  \n  In1 -> Box -> Out1;\n  In2 -> Box -> Out2;\n  Out1 -> Diff;\n  Out2 -> Diff;\n}",
+        "table": "| Input Change | Output Change |\n| :--- | :--- |\n| **1 bit** in Plaintext | ~32 bits in Ciphertext |\n| **1 bit** in Key | ~32 bits in Ciphertext |\n| **Goal** | Pattern Masking |"
+    },
+    {
+        "q": "What is meant by confusion and diffusion?",
+        "a": "### **Confusion and Diffusion**\n\n**1. Introduction**\nProposed by Claude Shannon, these are the two pillars of strong encryption.\n\n**2. Definitions**\n*   **Confusion:** Obscures the relationship between the **Plaintext/Key** and the **Ciphertext**. (Achieved by Substitution/S-Boxes).\n*   **Diffusion:** Dissipates the statistical structure of the **Plaintext** over the entire **Ciphertext**. (Achieved by Permutation/Transposition).\n\n**3. Conclusion**\nModern ciphers like AES use SP-Networks to maximize both.",
+        "graphviz": "graph CD {\n  node [shape=oval];\n  Confusion [style=filled, fillcolor=salmon];\n  Diffusion [style=filled, fillcolor=lightblue];\n  \n  Confusion -- \"Substitution\";\n  Diffusion -- \"Permutation\";\n}",
+        "table": "| Property | Mechanism | Goal |\n| :--- | :--- | :--- |\n| **Confusion** | S-Boxes | Hide Key Relationship |\n| **Diffusion** | P-Boxes/Shift | Spread Plaintext Stats |"
+    },
+    {
+        "q": "State the versions and key size of AES.",
+        "a": "### **AES Versions & Key Sizes**\n\n**1. Overview**\nThe Advanced Encryption Standard (AES) supports three versions based on key length, while the block size remains fixed at **128 bits**.\n\n**2. Versions**\n*   **AES-128:** 10 Rounds.\n*   **AES-192:** 12 Rounds.\n*   **AES-256:** 14 Rounds.\n\n**3. Conclusion**\nHigher key sizes offer greater security against brute-force attacks but require more processing rounds.",
+        "table": "| AES Version | Key Size | No. of Rounds |\n| :--- | :--- | :--- |\n| **AES-128** | 128 bits | 10 |\n| **AES-192** | 192 bits | 12 |\n| **AES-256** | 256 bits | 14 |"
+    },
+    {
+        "q": "Define symmetric key cryptography.",
+        "a": "### **Symmetric Key Cryptography**\n\n**1. Definition**\nAlso known as Secret-Key Cryptography, it is an encryption system where the **same key** is used for both encryption and decryption.\n\n**2. Key Points**\n*   **Shared Secret:** Sender and Receiver must share the key securely.\n*   **Speed:** Much faster than asymmetric cryptography.\n*   **Examples:** DES, AES, RC4.\n\n**3. Conclusion**\nIt is the standard for encrypting bulk data due to its efficiency.",
+        "graphviz": "digraph Symm {\n  rankdir=LR;\n  node [shape=box];\n  Keys [label=\"Shared Secret Key\", shape=key, style=filled, fillcolor=gold];\n  Sender -> Encrypt -> Ciphertext -> Decrypt -> Receiver;\n  Keys -> Encrypt;\n  Keys -> Decrypt;\n}",
+        "table": "| Feature | Description |\n| :--- | :--- |\n| **Key Count** | Single Shared Key |\n| **Usage** | Data Confidentiality |\n| **Pros** | High Speed |\n| **Cons** | Key Distribution Problem |"
+    },
+    {
+        "q": "State any two differences between block cipher and stream cipher.",
+        "a": "### **Block Cipher vs Stream Cipher**\n\n**1. Introduction**\nSymmetric ciphers are classified into two types based on how they process data.\n\n**2. Differences**\n\n*   **Processing Unit:**\n    *   *Block Cipher:* Encrypts a fixed-size block (e.g., 64/128 bits) at a time.\n    *   *Stream Cipher:* Encrypts data bit-by-bit or byte-by-byte.\n\n*   **Complexity/Speed:**\n    *   *Block Cipher:* More complex, slower execution (e.g., AES).\n    *   *Stream Cipher:* Simple, very fast hardware implementation (e.g., RC4).\n\n**3. Conclusion**\nBlock ciphers are used for file exchange; Stream ciphers are used for real-time channels.",
+        "table": "| Feature | Block Cipher | Stream Cipher |\n| :--- | :--- | :--- |\n| **Unit** | Block (64/128 bits) | Bit/Byte (1/8 bits) |\n| **Reversibility** | Needs Feistel/Inv. Matrix | Simple XOR |\n| **Usage** | Database, Files | Wireless, Streaming |"
+    },
+    {
+        "q": "Name the four transformations used in AES encryption rounds.",
+        "a": "### **AES Transformations**\n\n**1. Overview**\nEach round in AES (except the last) consists of four distinct transformations that process the 128-bit State Matrix.\n\n**2. The Four Stages**\n1.  **SubBytes:** Non-linear byte substitution using S-Box.\n2.  **ShiftRows:** Cyclic permutation of rows.\n3.  **MixColumns:** Matrix multiplication of columns (omitted in final round).\n4.  **AddRoundKey:** XORing the state with the Round Key.\n\n**3. Conclusion**\nThese layers provide the necessary Confusion and Diffusion.",
+        "graphviz": "digraph AES {\n  rankdir=LR;\n  node [shape=rect, style=filled, fillcolor=lightyellow];\n  Sub -> Shift -> Mix -> Key;\n  Sub [label=\"SubBytes\"];\n  Shift [label=\"ShiftRows\"];\n  Mix [label=\"MixColumns\"];\n  Key [label=\"AddRoundKey\"];\n}",
+        "table": "| Stage | Function |\n| :--- | :--- |\n| **SubBytes** | Substitution (Non-linearity) |\n| **ShiftRows** | Permutation (Diffusion) |\n| **MixColumns** | Mixing (Diffusion) |\n| **AddRoundKey** | Key Mixing (Secrecy) |"
+    }
+]
