@@ -1,0 +1,37 @@
+[
+    {
+        "q": "Define Virtualization.",
+        "a": "### **Virtualization**\n\n**1. Definition**\nVirtualization is the process of creating a software-based (virtual) representation of something, such as virtual applications, servers, storage, and networks. It uses software called a **Hypervisor** to abstract hardware resources.\n\n**2. Key Component**\n*   **Hypervisor (VMM):** Software that manages the distribution of physical resources to multiple virtual machines (VMs).\n\n**3. Conclusion**\nIt is the foundational technology of cloud computing, enabling efficient resource sharing and multi-tenancy.",
+        "graphviz": "digraph Virt {\n  HW [label=\"Physical Hardware\"];\n  HP [label=\"Hypervisor\", shape=doublebox];\n  HW -> HP;\n  HP -> {VM1, VM2, VM3};\n}"
+    },
+    {
+        "q": "What is service oriented Architecture (SOA)?",
+        "a": "### **Service Oriented Architecture (SOA)**\n\n**1. Definition**\nSOA is an architectural style in software design where components provide services to other components via a communications protocol over a network.\n\n**2. Key Principles**\n*   **Loose Coupling:** Services are independent and don't rely on the internal state of others.\n*   **Reusability:** Services can be combined in different ways to build new apps.\n\n**3. Conclusion**\nSOA is the predecessor to modern Microservices and is essential for cloud modularity.",
+        "table": "| Protocol | Purpose |\n| :--- | :--- |\n| **SOAP** | XML-based Messaging |\n| **REST** | Resource-based API (Lightweight) |"
+    },
+    {
+        "q": "Define inter process communication (IPC).",
+        "a": "### **Inter Process Communication (IPC)**\n\n**1. Definition**\nIPC is a mechanism provided by the operating system that allows processes to communicate and synchronize their actions, either on a single machine or across a network.\n\n**2. Main Methods**\n*   **Shared Memory:** Fast, processes read/write to same memory block.\n*   **Message Passing:** Processes exchange data packets (ideal for distributed systems).\n\n**3. Conclusion**\nIPC is critical in cloud systems where thousands of individual processes must coordinate to deliver a service.",
+        "graphviz": "graph IPC {\n  rankdir=LR;\n  P1 [label=\"Process A\"];\n  P2 [label=\"Process B\"];\n  P1 -- P2 [label=\"Shared Memory / Queue\"];\n}"
+    },
+    {
+        "q": "What is Remote process call (RPC)?",
+        "a": "### **Remote Procedure Call (RPC)**\n\n**1. Definition**\nRPC is a communication protocol that allows a program to execute a function on a remote computer as if it were a local function call, without the programmer having to manually code the network details.\n\n**2. Role in Cloud**\n*   **Abstraction:** It hides network complexity.\n*   **Communication:** Enables different servers in a cloud cluster to talk to each other.\n\n**3. Conclusion**\nModern implementations like **gRPC** are used extensively for low-latency cloud communication.",
+        "table": "| Term | Meaning |\n| :--- | :--- |\n| **Stub** | Small proxy code for the caller |\n| **Marshalling**| Converting data to network format |"
+    },
+    {
+        "q": "Discuss about (i) WSDL (ii) SOAP.",
+        "a": "### **Web Service Standards: WSDL & SOAP**\n\n**1. (i) WSDL (Web Services Description Language)**\n*   **Role:** An XML-based language used to describe the capabilities of a web service (The \"What\" and \"Where\").\n    *   *Example:* Like a manual for an API.\n\n**2. (ii) SOAP (Simple Object Access Protocol)**\n*   **Role:** A protocol for exchanging structured information in the implementation of web services (The \"How\").\n    *   *Example:* The envelope that carries the service data.\n\n**3. Conclusion**\nTogether, they allow different systems (e.g., Java and .NET) to work together over the internet.",
+        "table": "| Format | Description |\n| :--- | :--- |\n| **WSDL** | Description Language (XML) |\n| **SOAP** | Communication Protocol |"
+    },
+    {
+        "q": "What is virtualization in cloud computing?",
+        "a": "### **Virtualization in Cloud**\n\n**1. Definition**\nIn a cloud context, virtualization allows providers to run thousands of isolated environments (VMs) for different customers on the same physical data center hardware.\n\n**2. Importance**\n*   **Multi-tenancy:** Multiple users sharing one server safely.\n*   **Cost Reduction:** Maximizes hardware utilization.\n\n**3. Conclusion**\nIt is the \"Magic Engine\" that allows the cloud to be elastic and scalable.",
+        "graphviz": "digraph CloudVirt {\n  DataCenter -> Virtualization -> \"Many Customers\";\n}"
+    },
+    {
+        "q": "Differentiate between MISD and MIMD architecture.",
+        "a": "### **MISD vs. MIMD Architecture**\n\n**1. Introduction**\nFlynn's Taxonomy classifies computer architectures based on how instructions and data are processed.\n\n**2. Main Differences**\n*   **MISD (Multiple Instruction, Single Data):** Multiple processors execute different instructions on the **same** data. Very rare (used in flight sensors).\n*   **MIMD (Multiple Instruction, Multiple Data):** Multiple processors execute different instructions on **different** data independently. Most common (modern PC/Servers).\n\n**3. Conclusion**\nMIMD is the primary architecture for parallel and cloud computing.",
+        "table": "| System | Instructions | Data | Use Case |\n| :--- | :--- | :--- | :--- |\n| **MISD** | Multiple | Single | Fault-tolerant Systems |\n| **MIMD** | Multiple | Multiple | Cloud Clusters / Multi-core |"
+    }
+]
