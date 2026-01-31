@@ -1,0 +1,72 @@
+[
+    {
+        "q": "What is IaaS? (Note: Likely intended as \"IaaS\" based on syllabus, though handwritten as \"JASS\").",
+        "a": "### **Infrastructure as a Service (IaaS)**\n\n**1. Definition**\nIaaS is a cloud service model that provides virtualized computing resources (servers, storage, networks) over the internet. It is the most fundamental level of cloud computing.\n\n**2. Key Features**\n*   **Flexibility:** Users can scale resources up or down on demand.\n*   **Control:** Provides full control over the Operating System and software stack.\n\n**3. Conclusion**\nIt eliminates the need for physical hardware maintenance, allowing businesses to rent infrastructure from providers like AWS or Azure.",
+        "table": "| Feature | IaaS Example |\n| :--- | :--- |\n| **Resource** | Virtual Machines, Storage |\n| **Provider** | Amazon EC2, Microsoft Azure |"
+    },
+    {
+        "q": "Mention the types of Cloud Deployment models.",
+        "a": "### **Cloud Deployment Models**\n\n**1. Introduction**\nDeployment models specify how the cloud infrastructure is managed and who has access to the resources.\n\n**2. The Four Types**\n*   **Public Cloud:** Open to all over the internet (e.g., AWS).\n*   **Private Cloud:** Dedicated to a single organization.\n*   **Hybrid Cloud:** Combination of Public and Private clouds.\n*   **Community Cloud:** Shared by organizations with common goals.\n\n**3. Conclusion**\nSelecting a model depends on security, privacy, and cost requirements.",
+        "graphviz": "graph Deployment {\n  rankdir=LR;\n  node [shape=box];\n  Cloud -- {Public, Private, Hybrid, Community}\n}"
+    },
+    {
+        "q": "List any two Cloud Service providers.",
+        "a": "### **Cloud Service Providers (CSPs)**\n\n**1. Definition**\nCSPs are companies that offer various cloud platforms (IaaS, PaaS, SaaS) to users.\n\n**2. Key Examples**\n*   **Amazon Web Services (AWS):** The pioneer and current market leader in cloud services.\n*   **Microsoft Azure:** A major provider especially popular in enterprise environments.\n\n**3. Conclusion**\nOther notable providers include Google Cloud Platform (GCP) and IBM Cloud.",
+        "table": "| Provider | Flagship Service |\n| :--- | :--- |\n| **AWS** | EC2, S3 |\n| **Azure** | Azure VMs, Active Directory |"
+    },
+    {
+        "q": "Mention any two characteristics of cloud computing.",
+        "a": "### **Characteristics of Cloud Computing**\n\n**1. Introduction**\nCloud computing is defined by specific functional features that distinguish it from traditional hosting.\n\n**2. Key Characteristics**\n*   **On-Demand Self-Service:** Users can provision resources automatically without human intervention from the provider.\n*   **Rapid Elasticity:** Resources can be scaled out or in instantly to meet changing demands.\n\n**3. Conclusion**\nThese features ensure high flexibility and cost-effectiveness for businesses.",
+        "table": "| Characteristic | Benefit |\n| :--- | :--- |\n| **On-Demand** | No waiting time |\n| **Elasticity** | Handles traffic spikes |"
+    },
+    {
+        "q": "Define cloud computing and mention any two benefits.",
+        "a": "### **Cloud Computing: Definition & Benefits**\n\n**1. Definition**\nCloud computing is the on-demand delivery of IT resources (compute, database, storage) via the internet with pay-as-you-go pricing.\n\n**2. Key Benefits**\n*   **Cost Efficiency:** No upfront investment in physical hardware.\n*   **Global Reach:** Deploy applications globally in minutes.\n\n**3. Conclusion**\nIt allows organizations to focus on innovation instead of infrastructure maintenance.",
+        "graphviz": "digraph Benefits {\n  node [shape=ellipse, style=filled, fillcolor=lightgreen];\n  Cloud -> \"Cost Savings\";\n  Cloud -> \"Scalability\";\n}"
+    },
+    {
+        "q": "List the various service models of Cloud computing.",
+        "a": "### **Cloud Service Models**\n\n**1. Introduction**\nCloud service models reside in a stack where each layer offers a different level of control and abstraction.\n\n**2. The SPI Model**\n*   **SaaS:** Software as a Service (e.g., Gmail).\n*   **PaaS:** Platform as a Service (e.g., Heroku).\n*   **IaaS:** Infrastructure as a Service (e.g., Azure VM).\n\n**3. Conclusion**\nEach model targets a different audience, from end-users to developers and IT admins.",
+        "table": "| Model | Responsibility |\n| :--- | :--- |\n| **SaaS** | Use Softwares |\n| **PaaS** | Develop Apps |\n| **IaaS** | Manage Infrastructure |"
+    },
+    {
+        "q": "What is the Role of Utility computing in a Cloud environment?",
+        "a": "### **Utility Computing in Cloud**\n\n**1. Definition**\nUtility computing is a business model where a provider offers computing resources to users and charges them based on actual usage, similar to electricity or water utilities.\n\n**2. Role in Cloud**\n*   **Pay-per-use:** It forms the economic basis of cloud billing.\n*   **Asset Sharing:** It enables efficient resource pooling and cost reduction.\n\n**3. Conclusion**\nUtility computing makes high-end infrastructure accessible and affordable for users without massive capital expenditure.",
+        "graphviz": "digraph Utility {\n  Resources -> Meter -> \"Usage-Based Bill\";\n}"
+    },
+    {
+        "q": "What is service oriented Architecture (SOA)?",
+        "a": "### **Service Oriented Architecture (SOA)**\n\n**1. Definition**\nSOA is an architectural style in software design where components provide services to other components via a communications protocol over a network.\n\n**2. Key Principles**\n*   **Loose Coupling:** Services are independent and don't rely on the internal state of others.\n*   **Reusability:** Services can be combined in different ways to build new apps.\n\n**3. Conclusion**\nSOA is the predecessor to modern Microservices and is essential for cloud modularity.",
+        "table": "| Protocol | Purpose |\n| :--- | :--- |\n| **SOAP** | XML-based Messaging |\n| **REST** | Resource-based API (Lightweight) |"
+    },
+    {
+        "q": "What is a cloud computing reference model?",
+        "a": "### **Cloud Computing Reference Model**\n\n**1. Definition**\nA reference model provides a conceptual framework describing the layered architecture of cloud services and their interactions.\n\n**2. Layers**\n*   **Application Layer (SaaS)**\n*   **Platform Layer (PaaS)**\n*   **Infrastructure Layer (IaaS)**\n\n**3. Conclusion**\nIt helps standardize how services are delivered and managed across different providers.",
+        "graphviz": "digraph Ref {\n  rankdir=BT;\n  node [shape=record];\n  IaaS [label=\"IaaS\"];\n  PaaS [label=\"PaaS\"];\n  SaaS [label=\"SaaS\"];\n  IaaS -> PaaS -> SaaS;\n}"
+    },
+    {
+        "q": "Define inter process communication (IPC).",
+        "a": "### **Inter Process Communication (IPC)**\n\n**1. Definition**\nIPC is a mechanism provided by the operating system that allows processes to communicate and synchronize their actions, either on a single machine or across a network.\n\n**2. Main Methods**\n*   **Shared Memory:** Fast, processes read/write to same memory block.\n*   **Message Passing:** Processes exchange data packets (ideal for distributed systems).\n\n**3. Conclusion**\nIPC is critical in cloud systems where thousands of individual processes must coordinate to deliver a service.",
+        "graphviz": "graph IPC {\n  rankdir=LR;\n  P1 [label=\"Process A\"];\n  P2 [label=\"Process B\"];\n  P1 -- P2 [label=\"Shared Memory / Queue\"];\n}"
+    },
+    {
+        "q": "What is Remote process call (RPC)?",
+        "a": "### **Remote Procedure Call (RPC)**\n\n**1. Definition**\nRPC is a communication protocol that allows a program to execute a function on a remote computer as if it were a local function call, without the programmer having to manually code the network details.\n\n**2. Role in Cloud**\n*   **Abstraction:** It hides network complexity.\n*   **Communication:** Enables different servers in a cloud cluster to talk to each other.\n\n**3. Conclusion**\nModern implementations like **gRPC** are used extensively for low-latency cloud communication.",
+        "table": "| Term | Meaning |\n| :--- | :--- |\n| **Stub** | Small proxy code for the caller |\n| **Marshalling**| Converting data to network format |"
+    },
+    {
+        "q": "Discuss about (i) WSDL (ii) SOAP.",
+        "a": "### **Web Service Standards: WSDL & SOAP**\n\n**1. (i) WSDL (Web Services Description Language)**\n*   **Role:** An XML-based language used to describe the capabilities of a web service (The \"What\" and \"Where\").\n    *   *Example:* Like a manual for an API.\n\n**2. (ii) SOAP (Simple Object Access Protocol)**\n*   **Role:** A protocol for exchanging structured information in the implementation of web services (The \"How\").\n    *   *Example:* The envelope that carries the service data.\n\n**3. Conclusion**\nTogether, they allow different systems (e.g., Java and .NET) to work together over the internet.",
+        "table": "| Format | Description |\n| :--- | :--- |\n| **WSDL** | Description Language (XML) |\n| **SOAP** | Communication Protocol |"
+    },
+    {
+        "q": "What is virtualization in cloud computing?",
+        "a": "### **Virtualization in Cloud**\n\n**1. Definition**\nIn a cloud context, virtualization allows providers to run thousands of isolated environments (VMs) for different customers on the same physical data center hardware.\n\n**2. Importance**\n*   **Multi-tenancy:** Multiple users sharing one server safely.\n*   **Cost Reduction:** Maximizes hardware utilization.\n\n**3. Conclusion**\nIt is the \"Magic Engine\" that allows the cloud to be elastic and scalable.",
+        "graphviz": "digraph CloudVirt {\n  DataCenter -> Virtualization -> \"Many Customers\";\n}"
+    },
+    {
+        "q": "Differentiate between MISD and MIMD architecture. (Note: Identified as MSID/MSMD in handwriting).",
+        "a": "### **MISD vs. MIMD Architecture**\n\n**1. Introduction**\nFlynn's Taxonomy classifies computer architectures based on how instructions and data are processed.\n\n**2. Main Differences**\n*   **MISD (Multiple Instruction, Single Data):** Multiple processors execute different instructions on the **same** data. Very rare (used in flight sensors).\n*   **MIMD (Multiple Instruction, Multiple Data):** Multiple processors execute different instructions on **different** data independently. Most common (modern PC/Servers).\n\n**3. Conclusion**\nMIMD is the primary architecture for parallel and cloud computing.",
+        "table": "| System | Instructions | Data | Use Case |\n| :--- | :--- | :--- | :--- |\n| **MISD** | Multiple | Single | Fault-tolerant Systems |\n| **MIMD** | Multiple | Multiple | Cloud Clusters / Multi-core |"
+    }
+]
