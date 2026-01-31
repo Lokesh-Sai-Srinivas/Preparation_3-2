@@ -135,11 +135,22 @@ if selected_subject and selected_unit:
     # Load Questions
     questions = load_questions(selected_subject, selected_unit, q_type_key)
 
+    # --- SPECIAL HANDLING FOR MID-1 SETS ---
+    selected_set = None
+    if selected_unit == "Mid-1" and q_type_key == "Long":
+        st.sidebar.markdown("---")
+        selected_set = st.sidebar.radio("Select Exam Set", ["Set 1", "Set 2", "Set 3"])
+        # Filter questions strictly based on the prefix tag we added [Set X]
+        questions = [q for q in questions if f"[{selected_set}]" in q.get('q', '')]
+
     if not questions:
         st.info(f"No {q_type_key} questions available yet.")
     else:
         # --- SESSION STATE MANAGEMENT ---
+        # Update session key to separate navigation state for different Sets
         session_key = f"{selected_subject}_{selected_unit}_{q_type_key}"
+        if selected_set:
+            session_key += f"_{selected_set}"
         
         if 'current_session_key' not in st.session_state or st.session_state.current_session_key != session_key:
             st.session_state.current_session_key = session_key
@@ -153,7 +164,7 @@ if selected_subject and selected_unit:
             is_active = (i == st.session_state.q_index)
             label = f"{i + 1}"
             with cols[i % 10]:
-                if st.button(label, key=f"q_nav_{i}", type="primary" if is_active else "secondary", use_container_width=True):
+                if st.button(label, key=f"q_nav_{session_key}_{i}", type="primary" if is_active else "secondary", use_container_width=True):
                     st.session_state.q_index = i
                     st.rerun()
         
