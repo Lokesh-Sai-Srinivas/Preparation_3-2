@@ -1,0 +1,66 @@
+[
+    {
+        "q": "1. What is a compiler?",
+        "a": "A **compiler** is a system software that reads a program written in a **high-level language** and translates it into an **equivalent machine-level or object program**, while also detecting and reporting syntax and semantic errors."
+    },
+    {
+        "q": "2. What are the two parts of compilation? Explain briefly.",
+        "a": "Compilation is divided into two parts:\n\n1. **Analysis Phase (Front End):** Analyzes the source program for lexical, syntax, and semantic errors and produces an intermediate representation.\n2. **Synthesis Phase (Back End):** Converts the intermediate representation into optimized target machine code."
+    },
+    {
+        "q": "3. What does a semantic analysis do?",
+        "a": "**Semantic analysis** checks the **logical correctness** of the program by performing **type checking, scope checking, and declaration verification**, ensuring that statements follow the language semantics."
+    },
+    {
+        "q": "4. What is a symbol table?",
+        "a": "A **symbol table** is a data structure used by the compiler to store information about **identifiers**, such as name, data type, scope, and memory location, for quick access during compilation."
+    },
+    {
+        "q": "5. Differentiate Tokens, Patterns, and Lexeme.",
+        "a": "* **Lexeme:** The actual sequence of characters found in the source program\n* **Token:** A symbolic representation or category of lexemes\n* **Pattern:** A rule or regular expression that defines how lexemes of a token are formed"
+    },
+    {
+        "q": "6. List the operations on languages.",
+        "a": "The fundamental operations on languages are:\n\n* Union (L\u2081 \u222a L\u2082)\n* Concatenation (L\u2081L\u2082)\n* Kleene closure (L*)\n* Intersection\n* Difference"
+    },
+    {
+        "q": "7. Define parser.",
+        "a": "A **parser** is the compiler phase that receives tokens from the lexical analyzer and checks whether the token sequence conforms to the **grammar rules** of the programming language."
+    },
+    {
+        "q": "8. Mention the basic issues in parsing.",
+        "a": "The basic issues in parsing include:\n\n* Grammar ambiguity\n* Handling left recursion and left factoring\n* Operator precedence and associativity\n* Syntax error detection and recovery"
+    },
+    {
+        "q": "9. List the properties of LR parser.",
+        "a": "The properties of an LR parser are:\n\n* Scans input from **left to right**\n* Produces **rightmost derivation in reverse**\n* Handles a wide class of context-free grammars\n* Detects syntax errors as early as possible"
+    },
+    {
+        "q": "10. What are the problems with top-down parsing?",
+        "a": "The main problems with top-down parsing are:\n\n* It cannot handle **left-recursive grammars**\n* It often requires **left factoring**\n* Backtracking may be needed, increasing parsing time"
+    },
+    {
+        "q": "11. Mention the types of LR parsers.",
+        "a": "The commonly used types of LR parsers are:\n\n* **SLR (Simple LR)**\n* **CLR (Canonical LR or LR(1))**\n* **LALR (Look-Ahead LR)**"
+    },
+    {
+        "q": "12. What is backtracking?",
+        "a": "**Backtracking** is a parsing technique in which the parser **reverts to an earlier state** to try alternative productions when the current choice fails to match the input."
+    },
+    {
+        "q": "13. Define a context-free grammar.",
+        "a": "A **context-free grammar (CFG)** is defined as a 4-tuple\n[\nG = (V, T, P, S)\n]\nwhere each production is of the form **A \u2192 \u03b1**, with A as a single nonterminal symbol."
+    },
+    {
+        "q": "14. Difference between LR and LL parser.",
+        "a": "| LL Parser           | LR Parser                         |\n| ------------------- | --------------------------------- |\n| Top-down parser     | Bottom-up parser                  |\n| Leftmost derivation | Rightmost derivation (in reverse) |\n| Less powerful       | More powerful and flexible        |"
+    },
+    {
+        "q": "15. What are the different types of bottom-up parser?",
+        "a": "The different types of bottom-up parsers include:\n\n* Shift-Reduce Parser\n* Operator Precedence Parser\n* LR Parsers such as SLR, CLR, and LALR"
+    },
+    {
+        "q": "16. Mention the basic issues in parsing.",
+        "a": "The major issues in parsing are:\n\n* Eliminating ambiguity in grammar\n* Managing operator precedence and associativity\n* Handling syntax errors efficiently\n* Designing efficient parsing algorithms\n\n* \u2714 Not too short\n* \u2714 Not too long\n* \u2714 Ideal for **2-mark strict evaluation**\n\nIf you want, I can now give you:\n\n* **One-day-before exam revision sheet**\n* **Most expected short questions**\n* **Ultra-short 1-mark answers**\n\nJust say \ud83d\udc4d"
+    }
+]
