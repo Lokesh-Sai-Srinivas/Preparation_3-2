@@ -1,0 +1,30 @@
+[
+    {
+        "q": "1. Explain Version Control and state its need in Software Development.   [2M]",
+        "a": "### **Version Control & Its Need**\n\n**1. Definition**\nVersion Control System (VCS) is a software tool that records changes to a file or set of files over time so that you can recall specific versions later.\n\n**2. Need in Software Development**\n*   **Collaboration:** Allows multiple developers to work on the same project simultaneously.\n*   **History & Tracking:** Maintains a log of who made which change and when.\n*   **Backup & Restore:** Safety net to revert to a previous working state if code breaks.\n\n**3. Graph**\n\n```\nVer 1.0  -->  Ver 1.1  -->  Ver 2.0\n(Start)       (Edit)        (Release)\n```"
+    },
+    {
+        "q": "2. State the git commands for renaming and removing remotes.   [2M]",
+        "a": "### **Git Remote Commands**\n\n**1. Renaming a Remote**\n*   **Command:** `git remote rename <old_name> <new_name>`\n*   **Example:** `git remote rename origin destination`\n\n**2. Removing a Remote**\n*   **Command:** `git remote remove <name>`\n*   **Example:** `git remote remove origin`\n\n**3. Table**\n\n| Action | Command Syntax |\n| :--- | :--- |\n| **Rename** | `git remote rename old new` |\n| **Remove** | `git remote remove name` |"
+    },
+    {
+        "q": "3. Define Git and differentiate between GitHub and GitLab.   [2M]",
+        "a": "### **Git vs. Hosting Platforms**\n\n**1. Define Git**\nGit is a free, open-source **Distributed Version Control System (DVCS)** used to track changes in source code during software development.\n\n**2. GitHub vs. GitLab**\n\n| Feature | GitHub | GitLab |\n| :--- | :--- | :--- |\n| **Core Focus** | Hosting & Social Coding | Complete DevOps Platform |\n| **CI/CD** | GitHub Actions (Separate) | Built-in functionality |\n| **Popularity** | Largest Open Source Hub | Enterprise & Private Repos |"
+    },
+    {
+        "q": "4. State the purpose of JUnit.   [2M]",
+        "a": "### **Purpose of JUnit**\n\n**1. Introduction**\nJUnit is a unit testing framework for the Java programming language.\n\n**2. Key Purposes**\n*   **Test Automation:** Automates the execution of test cases.\n*   **Early Detection:** Finds bugs at the method level before integration.\n*   **TDD Support:** Enables Test-Driven Development methodology.\n*   **Regression:** Ensures new changes don't break old code.\n\n**3. Diagram**\n\n```\n[ Java Code ]  <-->  [ JUnit Test ]  -->  [ Report (Pass/Fail) ]\n```"
+    },
+    {
+        "q": "5. State the Git commands used to initialize and clone a repository.   [2M]",
+        "a": "### **Init & Clone Commands**\n\n**1. Initialize Repository**\n*   **Puppose:** Create a new Git repository in a directory.\n*   **Command:** `git init`\n\n**2. Clone Repository**\n*   **Purpose:** Copy an existing remote repository to local machine.\n*   **Command:** `git clone <url>`\n\n**3. Visual**\n\n| Command | Action |\n| :--- | :--- |\n| `git init` | Folder -> Repo |\n| `git clone` | Remote -> Local |"
+    },
+    {
+        "q": "6. Explain code coverage and write the formula used to calculate it.   [2M]",
+        "a": "### **Code Coverage**\n\n**1. Explanation**\nCode Coverage is a software metric used to measure how many lines/blocks of your source code are executed while the automated tests are running.\n\n**2. Formula**\nThe basic formula for line coverage is:\n\n```\nCode Coverage % = ( Number of Executed Lines / Total Number of Lines ) * 100\n```\n\n**3. Significance**\nA higher percentage indicates a more thoroughly tested application."
+    },
+    {
+        "q": "7. List any five features of SonarQube.   [2M]",
+        "a": "### **Features of SonarQube**\n\n**1. Introduction**\nSonarQube is a tool for continuous inspection of code quality.\n\n**2. Five Key Features**\n1.  **Static Code Analysis:** Scans code without running it.\n2.  **Code Smells:** Identifies maintainability issues.\n3.  **Bugs & Vulnerabilities:** Security flaw detection.\n4.  **Quality Gates:** Pass/Fail criteria for builds.\n5.  **Multi-Language:** Supports 20+ languages (Java, C#, Python, etc.).\n\n**3. Features Diagram**\n\n```\n           [ Security ]\n[ SonarQube ] + [ Reliability ]\n           [ Maintainability ]\n```"
+    }
+]

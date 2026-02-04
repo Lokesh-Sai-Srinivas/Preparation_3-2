@@ -1,0 +1,39 @@
+[
+    {
+        "q": "1. Define Agile Methodology and draw the Agile Model.   [2M]",
+        "a": "### **Agile Methodology**\n\n**1. Definition**\nAgile Methodology is an iterative and incremental approach to software development that emphasizes flexibility, customer collaboration, and rapid delivery of working software in small cycles called **sprints**.\n\n**2. Key Characteristics**\n*   **Iterative:** Work is divided into small chunks.\n*   **Collaborative:** Continuous interaction with stakeholders.\n*   **Adaptive:** Welcomes changes even late in development.\n\n**3. Agile Model Diagram**\n\n```\n   Plan  ->  Design  ->  Develop\n     ^                      |\n     |                      v\n   Feedback  <-  Deploy  <-  Test\n```",
+        "graphviz": "digraph Agile {\n  rankdir=LR;\n  node [shape=box];\n  Plan -> Design -> Develop -> Test -> Deploy -> Feedback;\n  Feedback -> Plan [label=\"Next Iteration\"];\n}"
+    },
+    {
+        "q": "2. Define Build Automation and identify its primary types.   [2M]",
+        "a": "### **Build Automation**\n\n**1. Definition**\nBuild Automation is the process of automating the scripting and execution of tasks required to compile source code, package binaries, run tests, and produce deployable artifacts.\n\n**2. Primary Types**\n*   **On-Demand Build:** Triggered manually by a developer.\n*   **Scheduled Build:** Runs at a specific time (e.g., nightly builds).\n*   **Triggered Build (CI):** Runs automatically on every code commit.\n\n**3. Conclusion**\nIt eliminates manual errors and speeds up the development process.",
+        "table": "| Type | Trigger Mechanism |\n| :--- | :--- |\n| **On-Demand** | Manual user action |\n| **Scheduled** | Timer / Cron job |\n| **Triggered** | VCS Commit / Push |"
+    },
+    {
+        "q": "3. Define the following terms: i) Sprint Backlog ii) Product Owner. [2M]",
+        "a": "### **Scrum Terminology**\n\n**1. (i) Sprint Backlog**\n*   **Definition:** A subset of items from the Product Backlog selected for a specific Sprint, plus a plan for delivering them.\n*   **Ownership:** Improved and managed by the **Development Team** during the sprint.\n\n**2. (ii) Product Owner**\n*   **Definition:** A key role in Scrum responsible for maximizing the value of the product and managing the **Product Backlog**.\n*   **Responsibility:** Prioritizes requirements and represents stakehoder interests.\n\n**3. Comparison**\n\n| Term | Key Responsibility |\n| :--- | :--- |\n| **Sprint Backlog** | Team's plan for the current Sprint |\n| **Product Owner** | Defines \"What\" needs to be built |"
+    },
+    {
+        "q": "4. List the stages of the Software Development Life Cycle (SDLC).   [2M]",
+        "a": "### **Stages of SDLC**\n\n**1. Introduction**\nThe SDLC framework defines standard phases to ensure high-quality software development.\n\n**2. List of Stages**\n1.  **Requirement Analysis:** Gathering user needs.\n2.  **Design:** Creating architecture (HLD/LLD).\n3.  **Implementation (Coding):** Writing the actual code.\n4.  **Testing:** Verifying functionality and fixing bugs.\n5.  **Deployment:** Releasing to production.\n6.  **Maintenance:** Updates and support.\n\n**3. SDLC Flowchart**\n\n```\nReq. Analysis -> Design -> Coding -> Testing -> Deployment -> Maintenance\n```",
+        "graphviz": "digraph SDLC {\n  node [shape=box];\n  Requirement -> Design -> Coding -> Testing -> Deployment -> Maintenance;\n}"
+    },
+    {
+        "q": "5. What is a CI/CD pipeline?   [2M]",
+        "a": "### **CI/CD Pipeline**\n\n**1. Definition**\nA **CI/CD (Continuous Integration / Continuous Delivery)** pipeline is an automated series of steps that enables software to be built, tested, and deployed reliably and efficiently.\n\n**2. Core Components**\n*   **CI:** Automates merging and testing code.\n*   **CD:** Automates release and deployment.\n\n**3. Pipeline Flow**\n\n```\nCode -> Build -> Test -> Release -> Deploy\n```\n\n**4. Visual Representation**",
+        "graphviz": "digraph CICD {\n  rankdir=LR;\n  Code -> Build -> Test -> Release -> Deploy;\n  Build [style=filled, fillcolor=lightblue];\n  Deploy [style=filled, fillcolor=lightgreen];\n}"
+    },
+    {
+        "q": "6. List the workflow phases in Kanban methodology.   [2M]",
+        "a": "### **Kanban Workflow Phases**\n\n**1. Introduction**\nKanban Visualizes work using a board to optimize flow and limit Work In Progress (WIP).\n\n**2. Standard Workflow Phases**\nAt a minimum, a Kanban board consists of three columns:\n*   **To Do (Backlog):** Tasks waiting to be started.\n*   **In Progress (Doing):** Tasks currently being worked on.\n*   **Done:** Completed tasks.\n\n**3. Kanban Board Structure**\n\n| To Do | In Progress | Done |\n| :--- | :--- | :--- |\n| Task A | Task B | Task C |\n| Task D | | Task E |"
+    },
+    {
+        "q": "7. What is Devops? State the components of DevOps.   [2M]",
+        "a": "### **DevOps**\n\n**1. Definition**\nDevOps is a cultural, organizational, and technical philosophy that integrates **Development (Dev)** and **Operations (Ops)** teams to shorten the development lifecycle and deliver high-quality software continuously.\n\n**2. Key Components (CAMS Model)**\n*   **Culture:** Collaboration and shared responsibility.\n*   **Automation:** Automating manual processes.\n*   **Measurement:** Metrics and feedback loops.\n*   **Sharing:** Knowledge and tool sharing.\n\n**3. Diagram**\n\n```\n   Dev  <--->  Ops\n(Collaboration & Automation)\n```"
+    },
+    {
+        "q": "8. Define Scrum methodology.   [2M]",
+        "a": "### **Scrum Methodology**\n\n**1. Definition**\nScrum is an Agile framework used for complex product development. It breaks work into fixed-length iterations called **Sprints** (typically 2-4 weeks) to deliver potentially shippable software increments.\n\n**2. Key Pillars**\n*   **Transparency:** Process is visible to all.\n*   **Inspection:** Regular checks on progress.\n*   **Adaptation:** Adjusting based on feedback.\n\n**3. Scrum Flow**\n\n```\nBacklog -> Sprint Planning -> Sprint Execution -> Review -> Retrospective\n```",
+        "graphviz": "digraph Scrum {\n  rankdir=LR;\n  node [shape=box];\n  Backlog -> Planning -> Sprint -> Review -> Retrospective;\n  Sprint [shape=oval, label=\"Sprint (2-4 Weeks)\"];\n}"
+    }
+]

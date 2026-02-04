@@ -1,0 +1,2474 @@
+---
+
+## **1 (a) Software Development Life Cycle (SDLC)**
+
+**[5 Marks]**
+
+### **Introduction**
+
+The **Software Development Life Cycle (SDLC)** is a systematic and structured process used to design, develop, test, deploy, and maintain software applications. It ensures high-quality software that meets user requirements within time and cost constraints.
+
+### **Definition**
+
+**Software Development Life Cycle (SDLC)** is a framework that defines a sequence of phases followed during software development to produce reliable, efficient, and maintainable software.
+
+### **Stages of SDLC**
+
+1. **Requirement Analysis**
+
+   * Identification and documentation of user requirements.
+   * Functional and non-functional requirements are gathered.
+   * Output: Software Requirement Specification (SRS).
+
+2. **System Design**
+
+   * Converts requirements into system architecture.
+   * Includes high-level and low-level design.
+   * Defines hardware, software, data flow, and interfaces.
+
+3. **Implementation (Coding)**
+
+   * Actual coding of the software using suitable programming languages.
+   * Each module is developed and verified individually.
+
+4. **Testing**
+
+   * Ensures the software is defect-free and meets requirements.
+   * Types include unit testing, integration testing, system testing, and acceptance testing.
+
+5. **Deployment**
+
+   * Software is released into the production environment.
+   * Users start interacting with the system.
+
+6. **Maintenance**
+
+   * Involves bug fixing, performance improvement, and feature enhancements.
+   * Ensures long-term usability of the software.
+
+### **SDLC Diagram**
+
+```
++------------------+
+| Requirement      |
+| Analysis         |
++------------------+
+         |
+         v
++------------------+
+| System Design    |
++------------------+
+         |
+         v
++------------------+
+| Implementation   |
+| (Coding)         |
++------------------+
+         |
+         v
++------------------+
+| Testing          |
++------------------+
+         |
+         v
++------------------+
+| Deployment       |
++------------------+
+         |
+         v
++------------------+
+| Maintenance      |
++------------------+
+```
+
+### **Conclusion**
+
+SDLC provides a disciplined approach to software development, ensuring better planning, quality control, and successful project completion.
+
+---
+
+## **1 (b) DevOps Life Cycle in the Automation Process**
+
+**[5 Marks]**
+
+### **Introduction**
+
+The **DevOps life cycle** integrates development and operations using automation to enable continuous delivery, faster releases, and improved collaboration.
+
+### **Explanation of DevOps Life Cycle Stages**
+
+1. **Planning**
+
+   * Requirement planning and backlog creation.
+   * Tools: Jira, Trello.
+
+2. **Development**
+
+   * Coding and version control.
+   * Tools: Git, GitHub.
+
+3. **Build**
+
+   * Source code is compiled and packaged automatically.
+   * Tools: Maven, Gradle, Jenkins.
+
+4. **Testing**
+
+   * Automated testing ensures early defect detection.
+   * Tools: Selenium, JUnit.
+
+5. **Release**
+
+   * Code is approved and versioned for deployment.
+
+6. **Deploy**
+
+   * Automated deployment to production.
+   * Tools: Docker, Kubernetes.
+
+7. **Operate**
+
+   * Monitoring and managing infrastructure.
+   * Tools: Nagios, Prometheus.
+
+8. **Monitor**
+
+   * Continuous feedback and performance analysis.
+   * Logs and alerts are generated.
+
+### **DevOps Life Cycle Diagram**
+
+```
+Plan → Code → Build → Test → Release → Deploy → Operate → Monitor
+   ↑____________________________________________________________|
+```
+
+### **Conclusion**
+
+Automation in the DevOps life cycle ensures faster delivery, reduced errors, continuous feedback, and improved software quality.
+
+---
+
+## **2 (a) Code Quality Measurement**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Code quality measurement evaluates how well software code meets reliability, maintainability, efficiency, and security standards.
+
+### **How Code Quality is Measured**
+
+Code quality is measured using **metrics, tools, and best practices**, as explained below:
+
+1. **Code Metrics**
+
+   * **Cyclomatic Complexity**: Measures code complexity.
+   * **Lines of Code (LOC)**: Indicates code size.
+   * **Code Duplication**: Identifies repeated code blocks.
+
+2. **Static Code Analysis**
+
+   * Analyzes code without execution.
+   * Detects bugs, vulnerabilities, and code smells.
+
+3. **Test Coverage**
+
+   * Measures how much code is tested.
+   * Types: Statement coverage, branch coverage.
+
+4. **Code Reviews**
+
+   * Manual inspection by peers.
+   * Improves readability and maintainability.
+
+5. **Quality Gates**
+
+   * Thresholds that code must pass before deployment.
+
+### **Code Quality Metrics Table**
+
+| Metric                | Purpose                         |
+| --------------------- | ------------------------------- |
+| Cyclomatic Complexity | Measures logical complexity     |
+| Code Coverage         | Measures tested code percentage |
+| Code Duplication      | Detects redundant code          |
+| Bug Density           | Bugs per thousand LOC           |
+
+### **Conclusion**
+
+Measuring code quality ensures reliable, maintainable, and secure software, reducing future technical debt.
+
+---
+
+## **2 (b) Bottlenecks in a Delivery Pipeline**
+
+**[5 Marks]**
+
+### **Introduction**
+
+A delivery pipeline automates the process of building, testing, and deploying software. Bottlenecks slow down the pipeline and affect release efficiency.
+
+### **Main Bottlenecks with Examples**
+
+1. **Manual Build and Deployment**
+
+   * Manual processes increase errors and delays.
+   * Example: Manual server configuration.
+
+2. **Slow Automated Testing**
+
+   * Long test execution time delays releases.
+   * Example: Large regression test suites.
+
+3. **Environment Inconsistency**
+
+   * Differences between development and production environments.
+   * Example: Application works locally but fails in production.
+
+4. **Poor Version Control Practices**
+
+   * Merge conflicts and unstable builds.
+   * Example: Infrequent code commits.
+
+5. **Lack of Monitoring and Feedback**
+
+   * Issues detected late.
+   * Example: No alerts for production failures.
+
+### **Delivery Pipeline Bottlenecks Flowchart**
+
+```
+Code Commit
+     |
+     v
+Build ----X----> Manual Build Delay
+     |
+     v
+Test ----X----> Slow Test Execution
+     |
+     v
+Deploy ----X----> Environment Issues
+```
+
+### **Conclusion**
+
+Identifying and removing bottlenecks in the delivery pipeline improves deployment speed, reliability, and overall DevOps efficiency.
+
+---
+
+If you want, I can now:
+
+* Provide **unit-wise answers**
+* Match **exact university question patterns**
+* Add **exam-highlight keywords**
+  Just share the **next 2 questions**.
+---
+
+## **3. DevOps Tools Used in the Software Industry**
+
+**[10 Marks]**
+
+### **Introduction**
+
+DevOps tools support automation, collaboration, continuous integration, continuous delivery, configuration management, testing, deployment, monitoring, and feedback throughout the DevOps life cycle. These tools help organizations deliver high-quality software rapidly and reliably.
+
+### **Explanation of Any Six DevOps Tools**
+
+#### **1. Git (Version Control Tool)**
+
+* Used for source code management.
+* Tracks changes in code and supports collaboration among developers.
+* Enables branching, merging, and rollback of code.
+
+#### **2. Jenkins (Continuous Integration Tool)**
+
+* Automates build and testing processes.
+* Detects integration issues early by triggering builds on every code commit.
+* Supports CI/CD through plugins.
+
+#### **3. Maven (Build Automation Tool)**
+
+* Used to build, package, and manage project dependencies.
+* Ensures consistent builds across environments.
+* Uses `pom.xml` for configuration.
+
+#### **4. Docker (Containerization Tool)**
+
+* Packages applications and dependencies into containers.
+* Ensures consistency across development, testing, and production.
+* Lightweight and faster than virtual machines.
+
+#### **5. Ansible (Configuration Management Tool)**
+
+* Automates configuration, deployment, and infrastructure management.
+* Agentless architecture using YAML playbooks.
+* Improves infrastructure consistency.
+
+#### **6. Nagios (Monitoring Tool)**
+
+* Monitors servers, applications, and network services.
+* Detects failures and sends alerts.
+* Ensures system availability and performance.
+
+### **DevOps Tools Classification Table**
+
+| Category                 | Tool Example |
+| ------------------------ | ------------ |
+| Version Control          | Git          |
+| Continuous Integration   | Jenkins      |
+| Build Automation         | Maven        |
+| Containerization         | Docker       |
+| Configuration Management | Ansible      |
+| Monitoring               | Nagios       |
+
+### **Conclusion**
+
+DevOps tools enable automation, faster delivery, better collaboration, and improved software quality, making them essential in modern software development.
+
+---
+
+## **4 (a) DevOps Architecture and Its Components**
+
+**[5 Marks]**
+
+### **Introduction**
+
+DevOps architecture defines how development and operations teams collaborate using tools and automation to enable continuous integration, continuous deployment, and continuous monitoring.
+
+### **DevOps Architecture Components**
+
+1. **Development Component**
+
+   * Coding and version control.
+   * Source code repositories are used.
+
+2. **Continuous Integration (CI) Component**
+
+   * Automatic build and test on every code commit.
+   * Ensures early defect detection.
+
+3. **Continuous Testing Component**
+
+   * Automated testing to validate builds.
+   * Improves reliability.
+
+4. **Deployment Component**
+
+   * Automated deployment to production.
+   * Reduces manual errors.
+
+5. **Operations Component**
+
+   * Infrastructure and configuration management.
+   * Ensures system stability.
+
+6. **Monitoring and Feedback Component**
+
+   * Continuous monitoring of applications.
+   * Provides feedback for improvement.
+
+### **DevOps Architecture Diagram**
+
+```
++-------------+
+| Development |
++-------------+
+       |
+       v
++-------------+
+| CI / Build  |
++-------------+
+       |
+       v
++-------------+
+| Testing     |
++-------------+
+       |
+       v
++-------------+
+| Deployment  |
++-------------+
+       |
+       v
++-------------+
+| Operations  |
++-------------+
+       |
+       v
++-------------+
+| Monitoring  |
++-------------+
+       |
+       +---- Feedback Loop ----+
+```
+
+### **Conclusion**
+
+DevOps architecture enables continuous delivery through automation, collaboration, and feedback across development and operations teams.
+
+---
+
+## **4 (b) CI/CD Pipeline: Definition, Phases, and Benefits**
+
+**[5 Marks]**
+
+### **Introduction**
+
+A CI/CD pipeline automates the process of integrating code changes, testing, and deploying applications, ensuring faster and more reliable software delivery.
+
+### **Definition**
+
+A **CI/CD pipeline** is an automated workflow that enables continuous integration, continuous testing, and continuous deployment of software.
+
+### **Main Phases of CI/CD Pipeline**
+
+1. **Code**
+
+   * Developers commit code to a shared repository.
+
+2. **Build**
+
+   * Code is compiled and packaged automatically.
+
+3. **Test**
+
+   * Automated tests validate functionality and quality.
+
+4. **Release**
+
+   * Build is approved and versioned.
+
+5. **Deploy**
+
+   * Application is deployed to production automatically.
+
+6. **Monitor**
+
+   * Application performance and issues are tracked.
+
+### **CI/CD Pipeline Flow Diagram**
+
+```
+Code Commit
+     |
+     v
+Build
+     |
+     v
+Test
+     |
+     v
+Release
+     |
+     v
+Deploy
+     |
+     v
+Monitor
+```
+
+### **Benefits of CI/CD Pipeline**
+
+* Faster software delivery
+* Early bug detection
+* Reduced manual errors
+* Improved software quality
+* Continuous feedback and improvement
+
+### **Conclusion**
+
+The CI/CD pipeline is a core DevOps practice that ensures rapid, reliable, and high-quality software delivery through automation.
+
+---
+
+✅ **All answers are exam-ready, structured, and full-mark oriented.**
+Send the **next 2 questions** whenever you’re ready.
+
+---
+
+## **5 (a) Differences and Similarities between Kanban and Scrum**
+
+**[5 Marks]**
+
+### **Introduction**
+
+**Kanban** and **Scrum** are popular Agile methodologies used for managing and improving software development processes. Both aim to increase productivity, transparency, and continuous improvement, but they differ in structure and execution.
+
+### **Differences between Kanban and Scrum**
+
+| Aspect          | Scrum                             | Kanban                      |
+| --------------- | --------------------------------- | --------------------------- |
+| Framework Type  | Iterative and time-boxed          | Continuous flow-based       |
+| Work Cycle      | Fixed-length sprints (1–4 weeks)  | No fixed iterations         |
+| Roles           | Scrum Master, Product Owner, Team | No predefined roles         |
+| Planning        | Sprint planning is mandatory      | Planning is optional        |
+| Work Limitation | Sprint backlog limits             | Uses explicit WIP limits    |
+| Changes         | Not allowed during sprint         | Changes can be made anytime |
+
+### **Similarities between Kanban and Scrum**
+
+* Both follow **Agile principles**
+* Emphasize **continuous improvement**
+* Improve **team collaboration and transparency**
+* Focus on **incremental delivery of value**
+
+### **Kanban vs Scrum Diagram**
+
+```
+Scrum:                   Kanban:
+Sprint 1                 Backlog
+Sprint 2                   |
+Sprint 3               In Progress
+                          |
+                        Done
+```
+
+### **Conclusion**
+
+While Scrum is best suited for projects with well-defined iterations, Kanban is ideal for continuous delivery environments. Both can be effectively used depending on project needs.
+
+---
+
+## **5 (b) Working of the Delivery Pipeline**
+
+**[5 Marks]**
+
+### **Introduction**
+
+A **Delivery Pipeline** automates the process of moving software from development to production, ensuring fast, reliable, and repeatable releases.
+
+### **Working of the Delivery Pipeline**
+
+1. **Code Commit**
+
+   * Developers commit code to a shared repository.
+
+2. **Build Stage**
+
+   * Source code is compiled and packaged automatically.
+
+3. **Testing Stage**
+
+   * Automated unit, integration, and system tests are executed.
+
+4. **Acceptance Stage**
+
+   * Validates business requirements and quality gates.
+
+5. **Deployment Stage**
+
+   * Application is deployed to staging or production.
+
+6. **Monitoring and Feedback**
+
+   * Application performance is monitored continuously.
+
+### **Delivery Pipeline Flowchart**
+
+```
+Code Commit
+     |
+     v
+Build
+     |
+     v
+Test
+     |
+     v
+Acceptance
+     |
+     v
+Deploy
+     |
+     v
+Monitor & Feedback
+```
+
+### **Conclusion**
+
+The delivery pipeline ensures faster releases, early defect detection, and continuous feedback, forming the backbone of DevOps practices.
+
+---
+
+## **6 (a) Agile Model, Agile Frameworks, Core Principles, Pros and Cons**
+
+**[10 Marks]**
+
+### **Introduction**
+
+The **Agile Model** is an iterative and incremental approach to software development that focuses on customer collaboration, flexibility, and rapid delivery of working software.
+
+---
+
+### **Agile Model Illustration**
+
+```
+Requirements
+     |
+     v
+Design
+     |
+     v
+Develop
+     |
+     v
+Test
+     |
+     v
+Release
+     |
+     v
+Feedback ----> Next Iteration
+```
+
+---
+
+### **Agile Frameworks**
+
+1. **Scrum**
+
+   * Uses sprints, product backlog, and defined roles.
+   * Suitable for complex projects.
+
+2. **Kanban**
+
+   * Visual workflow with WIP limits.
+   * Ideal for continuous delivery.
+
+3. **Extreme Programming (XP)**
+
+   * Focuses on technical excellence.
+   * Practices include pair programming and test-driven development.
+
+4. **Lean Software Development**
+
+   * Eliminates waste and optimizes flow.
+
+5. **Feature-Driven Development (FDD)**
+
+   * Develops software based on features.
+
+---
+
+### **Core Principles of Agile (Agile Manifesto)**
+
+* Customer satisfaction through early delivery
+* Welcome changing requirements
+* Frequent delivery of working software
+* Close collaboration between business and developers
+* Continuous improvement
+
+---
+
+### **Pros of Agile Model**
+
+* Faster delivery
+* High customer satisfaction
+* Flexible to change
+* Early bug detection
+* Continuous feedback
+
+---
+
+### **Cons of Agile Model**
+
+* Difficult to predict timelines
+* Requires experienced team
+* Less documentation
+* Not suitable for fixed-scope projects
+
+---
+
+### **Agile Frameworks Summary Table**
+
+| Framework | Key Feature               |
+| --------- | ------------------------- |
+| Scrum     | Time-boxed sprints        |
+| Kanban    | Continuous workflow       |
+| XP        | Technical excellence      |
+| Lean      | Waste reduction           |
+| FDD       | Feature-based development |
+
+---
+
+### **Conclusion**
+
+The Agile model promotes adaptability, collaboration, and continuous delivery. By using appropriate Agile frameworks, organizations can achieve faster development cycles and higher software quality.
+
+---
+
+✅ **These answers are fully exam-ready and structured for OUT-OF-OUT marks.**
+Share the **next questions** whenever you’re ready.
+
+---
+
+## **7 (a) Features of DevOps**
+
+**[5 Marks]**
+
+### **Introduction**
+
+DevOps is a modern software development approach that integrates development and operations teams to improve collaboration, speed, quality, and reliability of software delivery.
+
+### **Features of DevOps**
+
+1. **Continuous Integration and Continuous Delivery (CI/CD)**
+
+   * Frequent code integration and automated delivery.
+   * Enables faster and reliable releases.
+
+2. **Automation**
+
+   * Automates build, test, deployment, and infrastructure tasks.
+   * Reduces manual effort and human errors.
+
+3. **Collaboration and Communication**
+
+   * Breaks silos between development and operations teams.
+   * Encourages shared responsibility.
+
+4. **Continuous Monitoring and Feedback**
+
+   * Real-time monitoring of applications and infrastructure.
+   * Provides continuous feedback for improvement.
+
+5. **Infrastructure as Code (IaC)**
+
+   * Infrastructure is managed using code and scripts.
+   * Ensures consistency and scalability.
+
+### **Features of DevOps – Summary Table**
+
+| Feature                | Description                            |
+| ---------------------- | -------------------------------------- |
+| CI/CD                  | Continuous build, test, and deployment |
+| Automation             | Eliminates manual intervention         |
+| Collaboration          | Dev and Ops work together              |
+| Monitoring             | Continuous performance tracking        |
+| Infrastructure as Code | Automated infrastructure management    |
+
+### **Conclusion**
+
+DevOps features enable faster delivery, improved quality, better collaboration, and efficient system management.
+
+---
+
+## **7 (b) Build Automation and Its Benefits**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Build automation is a key DevOps practice that automates the process of compiling source code, running tests, and generating deployable artifacts.
+
+### **Definition**
+
+**Build Automation** is the process of automating the creation of executable applications from source code using predefined scripts and tools.
+
+### **Build Automation Process**
+
+1. Source code retrieval from version control
+2. Dependency management
+3. Compilation and packaging
+4. Automated testing
+5. Artifact generation
+
+### **Build Automation Flow Diagram**
+
+```
+Source Code
+     |
+     v
+Dependency Resolution
+     |
+     v
+Compile & Package
+     |
+     v
+Automated Tests
+     |
+     v
+Build Artifact
+```
+
+### **Benefits of Build Automation**
+
+* Faster and consistent builds
+* Early detection of integration issues
+* Reduced manual errors
+* Improved developer productivity
+* Supports continuous integration
+
+### **Conclusion**
+
+Build automation ensures reliable, repeatable, and efficient software builds, forming the foundation of CI/CD pipelines.
+
+---
+
+## **8 (a) DevOps Workflow and Principles**
+
+**[5 Marks]**
+
+### **Introduction**
+
+DevOps workflow represents the continuous process of developing, testing, deploying, and monitoring applications, guided by core DevOps principles.
+
+### **DevOps Workflow**
+
+1. **Plan**
+
+   * Requirement analysis and sprint planning.
+
+2. **Code**
+
+   * Application development and version control.
+
+3. **Build**
+
+   * Automated compilation and packaging.
+
+4. **Test**
+
+   * Automated testing for quality assurance.
+
+5. **Release**
+
+   * Versioning and approval for deployment.
+
+6. **Deploy**
+
+   * Automated deployment to production.
+
+7. **Operate**
+
+   * Infrastructure and application management.
+
+8. **Monitor**
+
+   * Performance tracking and feedback.
+
+### **DevOps Workflow Diagram**
+
+```
+Plan → Code → Build → Test → Release → Deploy → Operate → Monitor
+   ↑__________________________________________________________|
+```
+
+---
+
+### **Principles of DevOps**
+
+* Continuous improvement
+* Automation of processes
+* Collaboration and shared ownership
+* Continuous feedback
+* Customer-centric delivery
+
+### **Conclusion**
+
+DevOps workflow and principles ensure rapid delivery, high quality, and continuous enhancement of software systems.
+
+---
+
+## **8 (b) Importance of Code Quality and CI/CD Automation in DevOps**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Maintaining high code quality and implementing CI/CD automation are critical to achieving reliability, scalability, and faster delivery in DevOps.
+
+---
+
+### **Importance of Maintaining Code Quality**
+
+1. **Improves Maintainability**
+
+   * Clean and readable code is easier to modify.
+
+2. **Reduces Defects**
+
+   * Early detection of bugs through testing and analysis.
+
+3. **Enhances Security**
+
+   * Identifies vulnerabilities and code smells.
+
+4. **Reduces Technical Debt**
+
+   * Prevents accumulation of poor design choices.
+
+---
+
+### **Importance of CI/CD Automation**
+
+1. **Faster Software Delivery**
+
+   * Automates integration and deployment processes.
+
+2. **Early Error Detection**
+
+   * Automated testing catches issues early.
+
+3. **Consistency and Reliability**
+
+   * Eliminates manual deployment errors.
+
+4. **Continuous Feedback**
+
+   * Enables rapid improvement cycles.
+
+---
+
+### **Code Quality & CI/CD Relationship Table**
+
+| Aspect        | Contribution                       |
+| ------------- | ---------------------------------- |
+| Code Quality  | Reliable and maintainable software |
+| CI Automation | Frequent integration               |
+| CD Automation | Fast and safe deployment           |
+| Feedback Loop | Continuous improvement             |
+
+### **Conclusion**
+
+High code quality combined with CI/CD automation ensures stable, secure, and efficient software delivery, making DevOps practices successful.
+
+---
+
+✅ **All answers are strictly exam-oriented and ready for OUT-OF-OUT marks.**
+You can now share the **next set of questions**.
+
+---
+
+## **9 (a) Release Management Practices in DevOps**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Release management in DevOps focuses on planning, scheduling, and controlling the movement of software releases into production environments. It ensures frequent, reliable, and low-risk software delivery through automation and standardization.
+
+### **Release Management Practices in DevOps**
+
+1. **Continuous Delivery**
+
+   * Software is always in a releasable state.
+   * Automated build, test, and deployment pipelines are used.
+
+2. **Release Automation**
+
+   * Automates release processes to reduce manual intervention.
+   * Tools execute deployments consistently across environments.
+
+3. **Version Control and Release Versioning**
+
+   * Maintains version history of code and releases.
+   * Uses semantic versioning (e.g., v1.2.0).
+
+4. **Environment Management**
+
+   * Ensures consistency across development, testing, staging, and production.
+   * Uses containers and Infrastructure as Code (IaC).
+
+5. **Monitoring and Rollback Strategy**
+
+   * Continuous monitoring after release.
+   * Enables quick rollback in case of failures.
+
+### **Release Management Workflow Diagram**
+
+```
+Code Commit
+     |
+     v
+Build & Test
+     |
+     v
+Release Approval
+     |
+     v
+Deploy to Production
+     |
+     v
+Monitor & Rollback
+```
+
+### **Conclusion**
+
+Effective release management practices in DevOps enable faster releases, reduced risk, and improved system stability through automation and continuous monitoring.
+
+---
+
+## **9 (b) Scrum Roles and Events**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Scrum is an Agile framework that defines specific roles and events to ensure transparency, inspection, and adaptation during software development.
+
+---
+
+### **Scrum Roles**
+
+1. **Product Owner**
+
+   * Represents customer requirements.
+   * Maintains and prioritizes the product backlog.
+
+2. **Scrum Master**
+
+   * Facilitates Scrum practices.
+   * Removes impediments and supports the team.
+
+3. **Development Team**
+
+   * Cross-functional team responsible for delivering increments.
+   * Self-organizing and accountable.
+
+---
+
+### **Scrum Events**
+
+1. **Sprint**
+
+   * Time-boxed iteration (1–4 weeks).
+   * Produces a potentially shippable product increment.
+
+2. **Sprint Planning**
+
+   * Defines sprint goals and backlog items.
+
+3. **Daily Scrum**
+
+   * 15-minute stand-up meeting.
+   * Tracks progress and obstacles.
+
+4. **Sprint Review**
+
+   * Demonstrates completed work to stakeholders.
+
+5. **Sprint Retrospective**
+
+   * Reviews process improvements for the next sprint.
+
+---
+
+### **Scrum Framework Diagram**
+
+```
+Product Backlog
+      |
+      v
+Sprint Planning
+      |
+      v
+Sprint (1–4 Weeks)
+      |
+      v
+Increment
+      |
+      v
+Review & Retrospective
+```
+
+### **Conclusion**
+
+Scrum roles and events provide a structured approach to Agile development, ensuring collaboration, transparency, and continuous improvement.
+
+---
+
+✅ **Answers are fully exam-ready and aligned with strict evaluation standards.**
+If there are **more questions**, feel free to share them.
+
+Below are **PERFECT, EXAM-READY answers** for **Unit–2 Long Answer Questions**, written exactly in a **topper’s format**, with **clear structure, examples, diagrams/tables**, and **full-mark depth**.
+
+---
+
+# **UNIT – 2 : VERSION CONTROL & GIT**
+
+---
+
+## **1 (a) Version Control and Key Features of Git**
+
+**[5 Marks]**
+
+### **Introduction**
+
+In modern software development, multiple developers work on the same codebase. To manage changes efficiently and avoid conflicts, **version control systems** are used.
+
+### **Definition**
+
+**Version Control** is a system that records changes to files over time so that specific versions can be recalled later, enabling collaboration, tracking, and rollback of code.
+
+---
+
+### **Key Features of Git**
+
+1. **Distributed Version Control**
+
+   * Each developer has a complete local copy of the repository.
+   * Enables offline work and faster operations.
+
+2. **Branching and Merging**
+
+   * Lightweight branches allow parallel development.
+   * Easy merging of features into the main branch.
+
+3. **Fast Performance**
+
+   * Most operations are performed locally.
+   * Reduces dependency on network connectivity.
+
+4. **Data Integrity**
+
+   * Uses SHA-1 hashing to ensure data integrity.
+   * Prevents corruption or loss of code.
+
+5. **Staging Area**
+
+   * Allows developers to review and prepare changes before committing.
+   * Provides better control over commits.
+
+---
+
+### **Git Architecture Diagram**
+
+```
+Working Directory → Staging Area → Local Repository → Remote Repository
+```
+
+---
+
+### **Conclusion**
+
+Version control ensures safe and efficient code management. Git, with its distributed nature and powerful features, has become the most widely used version control system in the software industry.
+
+---
+
+## **1 (b) GIT Workflow with Example**
+
+**[5 Marks]**
+
+### **Introduction**
+
+The **Git workflow** defines how developers move code from development to a shared repository in a controlled and systematic manner.
+
+---
+
+### **GIT Workflow Stages**
+
+1. **Working Directory**
+
+   * Developers modify files locally.
+
+2. **Staging Area**
+
+   * Selected changes are prepared for commit.
+
+3. **Local Repository**
+
+   * Changes are committed and saved locally.
+
+4. **Remote Repository**
+
+   * Code is shared with other developers.
+
+---
+
+### **GIT Workflow Diagram**
+
+```
+Working Directory
+       |
+       v
+Staging Area
+       |
+       v
+Local Repository
+       |
+       v
+Remote Repository
+```
+
+---
+
+### **Example**
+
+```bash
+git status
+git add file1.java
+git commit -m "Added login functionality"
+git push origin main
+```
+
+---
+
+### **Conclusion**
+
+The Git workflow ensures controlled development, safe collaboration, and reliable code sharing among team members.
+
+---
+
+## **2 (a) GIT Commands: add, commit, status, remote (with Examples)**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Git provides a set of commands to manage source code changes efficiently throughout the development lifecycle.
+
+---
+
+### **Explanation of GIT Commands**
+
+#### **1. git status**
+
+* Displays the current state of the working directory.
+* Shows modified, staged, and untracked files.
+
+**Example:**
+
+```bash
+git status
+```
+
+---
+
+#### **2. git add**
+
+* Adds files from working directory to the staging area.
+
+**Example:**
+
+```bash
+git add index.html
+```
+
+---
+
+#### **3. git commit**
+
+* Saves staged changes to the local repository.
+
+**Example:**
+
+```bash
+git commit -m "Initial project setup"
+```
+
+---
+
+#### **4. git remote**
+
+* Manages connections to remote repositories.
+
+**Example:**
+
+```bash
+git remote add origin https://github.com/user/repo.git
+```
+
+---
+
+### **Command Summary Table**
+
+| Command    | Purpose                     |
+| ---------- | --------------------------- |
+| git status | Shows repository status     |
+| git add    | Stages files                |
+| git commit | Saves changes locally       |
+| git remote | Manages remote repositories |
+
+---
+
+### **Conclusion**
+
+These Git commands form the foundation of source code management and are essential for effective version control.
+
+---
+
+## **2 (b) GIT push and pull – Illustration and Difference**
+
+**[5 Marks]**
+
+### **Introduction**
+
+`git push` and `git pull` are essential commands used to synchronize local and remote repositories.
+
+---
+
+### **git push**
+
+* Uploads local commits to a remote repository.
+* Used to share changes with others.
+
+**Example:**
+
+```bash
+git push origin main
+```
+
+---
+
+### **git pull**
+
+* Fetches changes from a remote repository and merges them locally.
+* Keeps the local repository updated.
+
+**Example:**
+
+```bash
+git pull origin main
+```
+
+---
+
+### **Push and Pull Workflow Diagram**
+
+```
+Local Repository ----push----> Remote Repository
+Local Repository <---pull----- Remote Repository
+```
+
+---
+
+### **Difference between git push and git pull**
+
+| Aspect     | git push        | git pull                     |
+| ---------- | --------------- | ---------------------------- |
+| Direction  | Local → Remote  | Remote → Local               |
+| Purpose    | Uploads changes | Downloads and merges changes |
+| Usage Time | After commit    | Before starting new work     |
+
+---
+
+### **Conclusion**
+
+`git push` and `git pull` ensure synchronization between developers, enabling smooth collaboration in distributed environments.
+
+---
+
+✅ **Unit–2 answers are 100% exam-ready and full-mark compliant.**
+You may now share the **next unit or remaining questions**.
+
+Below are **STRICTLY EXAM-READY, FULL-MARK answers** for **Unit–2 (Long Answer Questions)**, written exactly in **topper format**, with **clear definitions, examples, diagrams, tables**, and **expected technical keywords**.
+
+---
+
+# **UNIT – 2 : TESTING & GIT**
+
+---
+
+## **3 (a) Unit Testing and Code Testing with Example**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Testing is a critical phase of software development. **Unit testing** focuses on validating individual components of the software to ensure correctness at the lowest level.
+
+### **Definition**
+
+**Unit Testing** is a software testing technique in which individual units or components of a program (such as functions or methods) are tested independently to verify that they work as expected.
+
+---
+
+### **How Code is Tested Using Unit Testing**
+
+1. **Identify the Unit**
+
+   * A function, method, or class is selected for testing.
+
+2. **Create Test Cases**
+
+   * Inputs and expected outputs are defined.
+
+3. **Execute Test Cases**
+
+   * The unit is executed using a testing framework.
+
+4. **Compare Results**
+
+   * Actual output is compared with expected output.
+
+5. **Report Results**
+
+   * Test is marked as pass or fail.
+
+---
+
+### **Unit Testing Flow Diagram**
+
+```
+Source Code
+     |
+     v
+Identify Unit
+     |
+     v
+Write Test Case
+     |
+     v
+Execute Test
+     |
+     v
+Compare Output
+```
+
+---
+
+### **Example (Java – JUnit)**
+
+```java
+public int add(int a, int b) {
+    return a + b;
+}
+```
+
+**Test Case:**
+
+```java
+assertEquals(10, add(5,5));
+```
+
+---
+
+### **Conclusion**
+
+Unit testing helps detect bugs early, improves code reliability, and simplifies maintenance by validating each unit independently.
+
+---
+
+## **3 (b) Software Testing Metrics and Code Coverage Tools**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Testing metrics are quantitative measures used to assess the effectiveness and quality of the testing process. Code coverage tools help determine how much of the source code is tested.
+
+---
+
+### **Metrics Used in Software Testing**
+
+1. **Test Case Coverage**
+
+   * Percentage of test cases executed.
+
+2. **Defect Density**
+
+   * Number of defects per thousand lines of code (KLOC).
+
+3. **Test Execution Rate**
+
+   * Number of test cases executed per unit time.
+
+4. **Defect Leakage**
+
+   * Defects found after release.
+
+5. **Code Coverage**
+
+   * Percentage of code executed during testing.
+
+---
+
+### **Types of Code Coverage**
+
+1. **Statement Coverage**
+
+   * Measures executed statements.
+
+2. **Branch Coverage**
+
+   * Measures executed decision paths.
+
+3. **Function Coverage**
+
+   * Measures executed functions.
+
+4. **Condition Coverage**
+
+   * Measures boolean expressions.
+
+---
+
+### **Code Coverage Tools with Examples**
+
+| Tool      | Language Support | Coverage Type       |
+| --------- | ---------------- | ------------------- |
+| JaCoCo    | Java             | Statement, Branch   |
+| Cobertura | Java             | Line, Branch        |
+| Istanbul  | JavaScript       | Statement, Function |
+| SonarQube | Multi-language   | Overall Quality     |
+
+---
+
+### **Conclusion**
+
+Testing metrics and coverage tools ensure software quality by measuring test effectiveness and identifying untested code areas.
+
+---
+
+## **4 (a) GIT Branching and Branch Creation/Deletion Commands**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Branching is a powerful feature of Git that allows developers to work on different features or fixes independently without affecting the main codebase.
+
+### **Definition**
+
+**Git Branching** is the process of creating separate lines of development within a repository to enable parallel development.
+
+---
+
+### **Advantages of Git Branching**
+
+* Isolates features and bug fixes
+* Enables parallel development
+* Reduces risk to main branch
+
+---
+
+### **Branching Diagram**
+
+```
+main
+  |
+  |---- feature-login
+  |
+  |---- bugfix-payment
+```
+
+---
+
+### **Commands to Create and Delete Branches**
+
+#### **Create a Branch**
+
+```bash
+git branch feature-login
+```
+
+#### **Switch to Branch**
+
+```bash
+git checkout feature-login
+```
+
+#### **Create and Switch (Single Command)**
+
+```bash
+git checkout -b feature-login
+```
+
+#### **Delete a Branch**
+
+```bash
+git branch -d feature-login
+```
+
+---
+
+### **Conclusion**
+
+Git branching enables efficient collaboration and safe feature development without disturbing the stable codebase.
+
+---
+
+## **4 (b) GIT and Its Benefits**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Git is the most widely used version control system in modern software development, supporting distributed collaboration and rapid development.
+
+### **Definition**
+
+**Git** is a distributed version control system used to track changes in source code and coordinate work among multiple developers.
+
+---
+
+### **Benefits of Git**
+
+1. **Distributed Architecture**
+
+   * Each developer has a complete repository copy.
+
+2. **Fast Performance**
+
+   * Local operations reduce network dependency.
+
+3. **Strong Branching Model**
+
+   * Lightweight branches support experimentation.
+
+4. **Data Integrity**
+
+   * SHA-1 hashing ensures code safety.
+
+5. **Open Source and Scalable**
+
+   * Free and suitable for projects of any size.
+
+---
+
+### **Git Benefits Summary Table**
+
+| Benefit     | Description                |
+| ----------- | -------------------------- |
+| Distributed | Offline access             |
+| Performance | Faster operations          |
+| Branching   | Parallel development       |
+| Security    | Data integrity via hashing |
+| Scalability | Supports large projects    |
+
+---
+
+### **Conclusion**
+
+Git provides a reliable, fast, and flexible version control solution, making it essential for DevOps and Agile environments.
+
+---
+
+✅ **These answers are 100% exam-oriented and ready to write as-is.**
+You can now share the **next questions or next unit**.
+
+Below are **PERFECT, EXAM-READY answers** for **Unit–2 Long Answer Questions**, written exactly in a **topper’s structured format**, with **definitions, diagrams, tables, examples**, and **key technical terms** required for **OUT-OF-OUT marks**.
+
+---
+
+# **UNIT – 2 : GIT & TESTING**
+
+---
+
+## **5 (a) GIT Staging Area with Examples**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Git uses a unique intermediate area called the **staging area**, which provides greater control over what changes are included in a commit.
+
+### **Definition**
+
+The **GIT Staging Area** is an intermediate area where changes are temporarily stored before they are committed to the local repository.
+
+---
+
+### **Purpose of the Staging Area**
+
+1. Selective inclusion of changes
+2. Review changes before committing
+3. Group related changes into a single commit
+4. Prevent accidental commits
+
+---
+
+### **GIT Areas Explanation**
+
+1. **Working Directory**
+
+   * Files are created or modified.
+
+2. **Staging Area (Index)**
+
+   * Selected files are added using `git add`.
+
+3. **Local Repository**
+
+   * Changes are permanently saved using `git commit`.
+
+---
+
+### **GIT Staging Area Diagram**
+
+```
+Working Directory
+       |
+   git add
+       |
+       v
+Staging Area
+       |
+   git commit
+       |
+       v
+Local Repository
+```
+
+---
+
+### **Example**
+
+```bash
+git status
+git add file1.java
+git commit -m "Added login module"
+```
+
+---
+
+### **Conclusion**
+
+The staging area allows developers to precisely control commits, improving code quality and version management.
+
+---
+
+## **5 (b) Unit Testing and Its Benefits**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Testing individual components early in development helps in building reliable and maintainable software.
+
+### **Definition**
+
+**Unit Testing** is a software testing method in which individual units or components of an application are tested independently to verify correctness.
+
+---
+
+### **Benefits of Unit Testing**
+
+1. **Early Bug Detection**
+
+   * Errors are identified at the initial stage.
+
+2. **Improves Code Quality**
+
+   * Encourages modular and clean code.
+
+3. **Simplifies Debugging**
+
+   * Isolates faults easily.
+
+4. **Supports Refactoring**
+
+   * Ensures existing functionality remains unaffected.
+
+5. **Reduces Development Cost**
+
+   * Fixing bugs early is cheaper.
+
+---
+
+### **Unit Testing Benefits Table**
+
+| Benefit         | Description                   |
+| --------------- | ----------------------------- |
+| Bug Detection   | Identifies errors early       |
+| Maintainability | Easier code modification      |
+| Reliability     | Stable and predictable output |
+| Cost Reduction  | Lower defect fixing cost      |
+
+---
+
+### **Conclusion**
+
+Unit testing ensures robust software development by validating code correctness at the lowest level.
+
+---
+
+## **6 (a) Role of Remote Repositories in Git and Related Commands**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Remote repositories enable collaboration among developers by providing a centralized location to share code changes.
+
+### **Definition**
+
+A **Remote Repository** is a version of a Git repository hosted on a server that allows multiple developers to collaborate.
+
+---
+
+### **Role of Remote Repositories**
+
+1. Enable team collaboration
+2. Centralize code sharing
+3. Maintain project backup
+4. Support distributed development
+
+---
+
+### **Common Git Remote Commands**
+
+| Command          | Description           | Example                     |
+| ---------------- | --------------------- | --------------------------- |
+| `git remote`     | Lists remotes         | `git remote -v`             |
+| `git remote add` | Adds a remote         | `git remote add origin URL` |
+| `git push`       | Uploads changes       | `git push origin main`      |
+| `git pull`       | Downloads changes     | `git pull origin main`      |
+| `git fetch`      | Fetches without merge | `git fetch origin`          |
+
+---
+
+### **Remote Repository Workflow Diagram**
+
+```
+Local Repository ----push----> Remote Repository
+Local Repository <---pull----- Remote Repository
+```
+
+---
+
+### **Conclusion**
+
+Remote repositories play a crucial role in collaborative development by enabling code sharing and synchronization.
+
+---
+
+## **6 (b) Comparison of Git with Other Version Control Systems**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Version control systems can be classified as centralized or distributed. Git differs significantly from traditional systems like SVN and CVS.
+
+---
+
+### **Comparison Table**
+
+| Feature        | Git                | SVN             | CVS             |
+| -------------- | ------------------ | --------------- | --------------- |
+| Type           | Distributed VCS    | Centralized VCS | Centralized VCS |
+| Offline Work   | Supported          | Not Supported   | Not Supported   |
+| Branching      | Lightweight & fast | Heavy & slow    | Limited         |
+| Performance    | Very fast          | Moderate        | Slow            |
+| Data Integrity | SHA-1 hashing      | Limited         | Weak            |
+
+---
+
+### **Advantages of Git over Other VCS**
+
+1. Offline availability
+2. Faster operations
+3. Strong branching model
+4. High data security
+5. Better collaboration
+
+---
+
+### **Conclusion**
+
+Git offers superior speed, flexibility, and reliability compared to traditional version control systems, making it the preferred choice in DevOps environments.
+
+---
+
+✅ **All answers are strictly exam-oriented and ready to write directly.**
+You may now share the **next set of questions or next unit**.
+
+Below are **PERFECT, EXAM-READY answers** for **Unit–2 Long Answer Questions**, written in **topper format**, with **clear definitions, commands, examples, tables, and diagrams**, suitable for **OUT-OF-OUT marks**.
+
+---
+
+# **UNIT – 2 : GIT CONFIGURATION & TESTING TOOLS**
+
+---
+
+## **7 (a) Commonly Used Git Configuration Commands with Examples**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Git configuration commands are used to set user identity, editor preferences, and behavior settings required for proper repository management and collaboration.
+
+---
+
+### **Purpose of Git Configuration**
+
+* Identifies the author of commits
+* Customizes Git behavior
+* Ensures consistency across repositories
+
+---
+
+### **Commonly Used Git Configuration Commands**
+
+#### **1. Configure User Name**
+
+* Sets the author name for commits.
+
+```bash
+git config --global user.name "Sairaju"
+```
+
+---
+
+#### **2. Configure Email Address**
+
+* Sets the author email for commits.
+
+```bash
+git config --global user.email "sairaju@gmail.com"
+```
+
+---
+
+#### **3. Configure Default Editor**
+
+* Sets the default text editor for Git.
+
+```bash
+git config --global core.editor "code"
+```
+
+---
+
+#### **4. View Configuration Settings**
+
+* Displays all Git configuration values.
+
+```bash
+git config --list
+```
+
+---
+
+#### **5. Configure Line Ending Handling**
+
+* Handles cross-platform line endings.
+
+```bash
+git config --global core.autocrlf true
+```
+
+---
+
+### **Git Configuration Summary Table**
+
+| Command       | Purpose                 |
+| ------------- | ----------------------- |
+| user.name     | Sets commit author name |
+| user.email    | Sets commit email       |
+| core.editor   | Sets default editor     |
+| core.autocrlf | Manages line endings    |
+
+---
+
+### **Conclusion**
+
+Git configuration commands personalize the Git environment and ensure accurate tracking of code changes across collaborative projects.
+
+---
+
+## **7 (b) Commands Used to Set Up a Git Repository**
+
+**[5 Marks]**
+
+### **Introduction**
+
+Setting up a Git repository is the first step in version control, allowing developers to track and manage source code changes.
+
+---
+
+### **Steps to Set Up a Git Repository**
+
+#### **1. Initialize a Repository**
+
+* Creates a new Git repository.
+
+```bash
+git init
+```
+
+---
+
+#### **2. Check Repository Status**
+
+* Displays the state of the working directory.
+
+```bash
+git status
+```
+
+---
+
+#### **3. Add Files to Staging Area**
+
+* Moves files to the staging area.
+
+```bash
+git add .
+```
+
+---
+
+#### **4. Commit Changes**
+
+* Saves changes to the local repository.
+
+```bash
+git commit -m "Initial commit"
+```
+
+---
+
+#### **5. Link Remote Repository**
+
+* Connects local repository to remote.
+
+```bash
+git remote add origin https://github.com/user/repo.git
+```
+
+---
+
+### **Git Repository Setup Diagram**
+
+```
+Create Folder
+     |
+git init
+     |
+git add
+     |
+git commit
+     |
+git remote add
+```
+
+---
+
+### **Conclusion**
+
+These commands establish a complete Git repository, enabling version tracking and collaboration.
+
+---
+
+## **8 (a) Purpose of JUnit and Its Usage with Examples**
+
+**[5 Marks]**
+
+### **Introduction**
+
+JUnit is a widely used unit testing framework for Java applications, supporting test automation and test-driven development.
+
+---
+
+### **Purpose of JUnit**
+
+1. Automates unit testing
+2. Detects defects early
+3. Supports Test-Driven Development (TDD)
+4. Ensures code reliability
+5. Simplifies regression testing
+
+---
+
+### **JUnit Annotations**
+
+| Annotation     | Purpose                    |
+| -------------- | -------------------------- |
+| `@Test`        | Marks a test method        |
+| `@Before`      | Runs before each test      |
+| `@After`       | Runs after each test       |
+| `@BeforeClass` | Runs once before all tests |
+| `@AfterClass`  | Runs once after all tests  |
+
+---
+
+### **JUnit Usage Example**
+
+**Method to Test**
+
+```java
+public int add(int a, int b) {
+    return a + b;
+}
+```
+
+**JUnit Test Case**
+
+```java
+@Test
+public void testAdd() {
+    assertEquals(10, add(5,5));
+}
+```
+
+---
+
+### **JUnit Testing Flow Diagram**
+
+```
+Write Code → Write Test → Execute Test → Verify Output
+```
+
+---
+
+### **Conclusion**
+
+JUnit provides an efficient framework for validating Java code correctness, improving software quality and maintainability.
+
+---
+
+## **8 (b) Code Coverage Features in NUnit with Examples**
+
+**[5 Marks]**
+
+### **Introduction**
+
+NUnit is a popular unit testing framework for .NET applications. Code coverage in NUnit measures how much of the codebase is executed during tests.
+
+---
+
+### **Code Coverage in NUnit**
+
+NUnit itself does not measure coverage directly but integrates with coverage tools such as:
+
+* **NCover**
+* **OpenCover**
+* **dotCover**
+
+---
+
+### **Code Coverage Features Supported**
+
+1. **Statement Coverage**
+
+   * Measures executed lines of code.
+
+2. **Branch Coverage**
+
+   * Measures executed decision paths.
+
+3. **Method Coverage**
+
+   * Measures executed methods.
+
+4. **Class Coverage**
+
+   * Measures tested classes.
+
+---
+
+### **NUnit Code Coverage Example**
+
+**Method**
+
+```csharp
+public int Multiply(int a, int b) {
+    return a * b;
+}
+```
+
+**NUnit Test**
+
+```csharp
+[Test]
+public void TestMultiply() {
+    Assert.AreEqual(6, Multiply(2,3));
+}
+```
+
+✔ This test increases **method and statement coverage**.
+
+---
+
+### **Code Coverage Summary Table**
+
+| Coverage Type | Description         |
+| ------------- | ------------------- |
+| Statement     | Executed code lines |
+| Branch        | Decision paths      |
+| Method        | Executed functions  |
+| Class         | Tested classes      |
+
+---
+
+### **Conclusion**
+
+Code coverage in NUnit ensures that application logic is thoroughly tested, improving reliability and reducing defects in .NET applications.
+
+---
+
+✅ **These answers are 100% exam-ready and evaluator-oriented.**
+You can now share the **next unit or remaining questions**.
+
+---
+
+# **Code Coverage Analysis and Reporting Using SonarQube**
+
+**[10 Marks]**
+
+### **Introduction**
+
+Code coverage is a key quality metric that indicates how much of the source code is executed during testing. **SonarQube** is a widely used static code analysis platform that analyzes, measures, and reports code coverage as part of overall code quality assessment in DevOps and CI/CD environments.
+
+---
+
+### **What is Code Coverage in SonarQube**
+
+In SonarQube, **code coverage** represents the percentage of source code lines, branches, and conditions that are executed by automated tests. It helps identify untested parts of the codebase and improves software reliability.
+
+---
+
+### **How Code Coverage is Analyzed in SonarQube**
+
+#### **1. Source Code Analysis**
+
+* SonarQube scans the source code repository.
+* Identifies files, functions, branches, and executable lines.
+
+#### **2. Test Execution with Coverage Tools**
+
+* Unit tests are executed using testing frameworks.
+* Coverage tools generate coverage reports.
+
+  * Example tools: JaCoCo (Java), Istanbul (JavaScript), Cobertura.
+
+#### **3. Coverage Report Import**
+
+* Generated coverage reports are imported into SonarQube.
+* SonarQube does not generate coverage itself; it consumes external reports.
+
+#### **4. Metric Calculation**
+
+SonarQube calculates coverage using the following metrics:
+
+* **Line Coverage**
+* **Branch Coverage**
+* **Condition Coverage**
+* **Overall Coverage**
+
+#### **5. Quality Gate Evaluation**
+
+* Coverage results are compared against predefined thresholds.
+* Builds fail if coverage does not meet required standards.
+
+---
+
+### **Code Coverage Analysis Flow Diagram**
+
+```
+Source Code
+     |
+     v
+Execute Unit Tests
+     |
+     v
+Generate Coverage Report
+     |
+     v
+SonarQube Analysis
+     |
+     v
+Coverage Metrics & Quality Gate
+```
+
+---
+
+### **Code Coverage Metrics Reported by SonarQube**
+
+| Metric Type        | Description                                |
+| ------------------ | ------------------------------------------ |
+| Line Coverage      | Percentage of executed code lines          |
+| Branch Coverage    | Percentage of executed decision branches   |
+| Condition Coverage | Percentage of evaluated boolean conditions |
+| Overall Coverage   | Combined coverage score                    |
+| Uncovered Lines    | Lines not tested by any test case          |
+
+---
+
+### **Code Coverage Reporting in SonarQube**
+
+1. **Dashboard View**
+
+   * Displays overall coverage percentage.
+   * Shows trends over time.
+
+2. **File-Level View**
+
+   * Highlights covered and uncovered lines.
+   * Uses color indicators (green/red).
+
+3. **Issue Tracking**
+
+   * Marks uncovered code as technical debt.
+   * Suggests areas requiring additional tests.
+
+4. **Quality Gate Status**
+
+   * Indicates pass or fail based on coverage rules.
+   * Prevents low-quality code from reaching production.
+
+---
+
+### **Example Scenario**
+
+* Unit tests are executed using JUnit.
+* Coverage is generated using JaCoCo.
+* JaCoCo report is imported into SonarQube.
+* SonarQube displays:
+
+  * 85% line coverage
+  * 80% branch coverage
+* Quality Gate passes since minimum required coverage is 80%.
+
+---
+
+### **Benefits of Using SonarQube for Code Coverage**
+
+* Early detection of untested code
+* Improved software reliability
+* Reduced defects and technical debt
+* Enforced quality standards via Quality Gates
+* Seamless CI/CD integration
+
+---
+
+### **Conclusion**
+
+SonarQube provides a comprehensive mechanism to **analyze, visualize, and enforce code coverage standards** by integrating test coverage reports into a unified quality platform. By combining automated testing, detailed reporting, and Quality Gates, SonarQube ensures high code quality and continuous improvement in DevOps environments.
+
+---
+
+✅ **This is a full-length, 10-mark, examiner-impressive answer — ready to write as-is.**
+If you want, I can also provide:
+
+* **Diagram-only revision version**
+* **University-model answer format**
+* **2–3 page handwritten-equivalent version**
+
+Below are **EXAM-READY, 2-MARK SHORT ANSWERS** for **UNIT-2**, written in **precise topper style**, with **clear definitions, key points, and formulas**. Each answer is **concise and sufficient for full marks**.
+
+---
+
+## **UNIT – 2 : SHORT ANSWER QUESTIONS**
+
+---
+
+## **1. Explain Version Control and state its need in Software Development.**
+
+**[2 Marks]**
+
+### **Version Control**
+
+**Version Control** is a system that records and manages changes made to source code over time, allowing developers to track revisions and restore previous versions.
+
+### **Need in Software Development**
+
+* Enables collaboration among multiple developers
+* Tracks changes and maintains history
+* Allows rollback to previous stable versions
+
+---
+
+## **2. State the git commands for renaming and removing remotes.**
+
+**[2 Marks]**
+
+* **Rename a remote**
+
+```bash
+git remote rename oldname newname
+```
+
+* **Remove a remote**
+
+```bash
+git remote remove origin
+```
+
+---
+
+## **3. Define Git and differentiate between GitHub and GitLab.**
+
+**[2 Marks]**
+
+### **Definition of Git**
+
+**Git** is a distributed version control system used to track changes in source code and manage collaborative development.
+
+### **Difference between GitHub and GitLab**
+
+| Aspect  | GitHub         | GitLab              |
+| ------- | -------------- | ------------------- |
+| CI/CD   | External tools | Built-in CI/CD      |
+| Hosting | Cloud-based    | Cloud & self-hosted |
+
+---
+
+## **4. State the purpose of JUnit.**
+
+**[2 Marks]**
+
+### **Purpose of JUnit**
+
+JUnit is a unit testing framework for Java used to:
+
+* Automate unit testing
+* Detect defects early
+* Support Test-Driven Development (TDD)
+
+---
+
+## **5. State the Git commands used to initialize and clone a repository.**
+
+**[2 Marks]**
+
+* **Initialize a repository**
+
+```bash
+git init
+```
+
+* **Clone a repository**
+
+```bash
+git clone <repository-URL>
+```
+
+---
+
+## **6. Explain code coverage and write the formula used to calculate it.**
+
+**[2 Marks]**
+
+### **Code Coverage**
+
+**Code Coverage** measures the percentage of source code executed during testing.
+
+### **Formula**
+
+```
+Code Coverage (%) =
+(Executed Lines of Code / Total Lines of Code) × 100
+```
+
+---
+
+## **7. List any five features of SonarQube.**
+
+**[2 Marks]**
+
+### **Features of SonarQube**
+
+1. Static code analysis
+2. Code coverage measurement
+3. Bug and vulnerability detection
+4. Code smell identification
+5. Quality Gates enforcement
+
+---
+
+✅ These answers are **strict-evaluator friendly**, **to-the-point**, and **perfect for 2-mark questions**.
+
+If you want:
+
+* **One-page Unit-2 quick revision**
+* **Important formulas & commands list**
+* **Previous-year question mapping**
+
+Just say the word 👍
+
